@@ -1,0 +1,61 @@
+//This program shows some basic processing on a matrix of numerical values.
+//It shows how to construct a simple program with stable and executable code 
+//...  that is also flexible to experiment with different methods of assigning values to variables in the middle of the program's processing stream
+
+#include <iostream>
+#include <string>
+//#include <windows.h>
+
+
+using namespace std;
+
+
+int main()
+{
+
+int i;
+int j;
+int k;
+int n = 10;
+//int r;
+//int q; 
+
+i = j = k = n;
+// cout << i << "\n";
+//  cout << j << "\n";
+//   cout << k << "\n";
+ //   cout << n << "\n";
+    int r1;
+    int grid[i][j][k] = {
+    
+        {2,1,1},
+        {1,1,0},
+        {0,1,1}
+    };
+    
+   for (int r = 0; r < n; r++){
+   r1 == grid[r][r][r]; //r is an array position. Assign the value of the grid's 'r' position for all 3 dimensions to r1
+   
+  cout << grid[r1][r1][r1]  << " Value of r1 \n";
+  
+   
+  // cout << q  << "\n";
+   
+  for (int q = r+1; q < n; q++){
+        cout << q  << " Value of q \n";
+     if (q != r1) 
+    {
+        cout << grid[q][q][q]  << " Value of grid \n";
+   return 0; 
+      //r = r1; 
+       
+            
+       return r1; 
+        
+        }
+   }
+   
+}
+          //  cout << grid[0][0][0]  << "\n";
+               
+}
